@@ -6,7 +6,6 @@
   --background-color: #e5e5e5;
   --accent-color: #ffffff;
   --secondary-accent-color: #404bbf;
-  /* --main-text: "Roboto", sans-serif; */
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -54,8 +53,10 @@ body {
 .address:focus {
   color: var(--secondary-accent-color);
 }
-.address {
-  font-style: normal;
+.address{
+    font-style: normal;
+}
+.address-link{
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -64,12 +65,16 @@ body {
 }
 /* Hero */
 .hero {
-  font-weight: 700;
+  background-color: var(--secondary-color);
+ 
+}
+.hero-title{
+font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  background-color: var(--secondary-color);
-  color: var(--accent-color);
+text-align: center;
+   color: var(--accent-color);
 }
 .main-button {
   font-family: inherit;
@@ -89,6 +94,16 @@ body {
   color: var(--accent-color);
 }
 /* Our strengths */
+.hidden-title{
+     position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 .subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -106,12 +121,16 @@ body {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
   text-transform: capitalize;
   color: var(--secondary-color);
 }
 /* Team */
 .team-section {
   background-color: var(--secondary-background);
+}
+.team-photo{
+    background-color: var(--accent-color);
 }
 /* Footer */
 .footer {
